@@ -54,7 +54,10 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 (Overwrite): Only keep the current customer address.
+When the address changes, it replaces the old one. Old address is lost, only the new one stays. Easier to manage, but no history.
+
+Type 2 (Retain History): Keep every version of the customer’s address. When the address changes,  new record is added instead of replacing. We can see what the address was in the past. It adds a bit of complexity, but it gives full history of addresses.
 ```
 
 ***
